@@ -1,17 +1,22 @@
 import React from 'react';
 import Screen from '../components/Screen';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import colors from '../config/colors';
 
 
 function Welcome(props) {
     return (
-        <Screen style={styles.background}>
+        <Screen >
+            <View style={styles.background}>
 
+            </View>
         </Screen>
     );
 }
 const styles = StyleSheet.create({
-    background:colors.background,
+    background:{
+        backgroundColor:"#caf0f8",
+        flex:1,
+    }
 })
 export default Welcome;
